@@ -5,12 +5,9 @@ import {
   ChevronRightIcon,
   TrashIcon,
 } from "@heroicons/react/20/solid";
-import { PencilIcon } from "@heroicons/react/24/solid";
-import { useNavigate } from "react-router";
 import { AuthContext } from "../context/AuthContext";
 
 const DashBoard = () => {
-  const navigate = useNavigate();
   const { products, DeleteProdcut } = useContext(ShopContext);
   const { userDetails } = useContext(AuthContext);
   const itemsPerPage = 25;
@@ -85,15 +82,6 @@ const DashBoard = () => {
               className="group w-10 rounded-full p bg-white shadow-xl h-10 border flex items-center justify-center absolute bottom-4 right-4"
             >
               <TrashIcon className="w-5 h-5 group-hover:text-red-600 text-yellow-400" />
-            </div>
-            <div
-              onClick={() => {
-                navigate("/edit-catalogue");
-                scrollTo(0, 0);
-              }}
-              className="group w-10 rounded-full p bg-white shadow-xl h-10 border flex items-center justify-center absolute bottom-4 left-4"
-            >
-              <PencilIcon className="w-5 h-5 group-hover:text-green-600 text-secondary-200" />
             </div>
           </div>
         ))}

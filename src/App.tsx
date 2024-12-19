@@ -10,7 +10,6 @@ import AddItem from "./components/Additem";
 import { ToastContainer } from "react-toastify";
 import DashBoard from "./components/Dashboard";
 import Footer from "./components/Footer";
-import EditItem from "./components/EditCatalogue";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import { AuthContext } from "./components/context/AuthContext";
@@ -68,10 +67,7 @@ const App = () => {
           path="/add-catalogue"
           element={user ? <AddItem /> : <Navigate to="/login" />}
         />
-        <Route
-          path="/edit-catalogue"
-          element={user ? <EditItem /> : <Navigate to="/login" />}
-        />
+      
       </Routes>
       <Footer user={user} />
     </div>
