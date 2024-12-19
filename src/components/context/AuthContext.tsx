@@ -69,7 +69,7 @@ export const AuthContext = createContext<AuthContextType>(initContext);
 const AuthContextProvider = ({ children }: Children): ReactElement => {
   const [firstName, setFirstName] = useState<string>("");
   const [lastName, setLastName] = useState<string>("");
-  const [email, setEmail] = useState<string>("adebayo.ridwan@ymgit addil.com");
+  const [email, setEmail] = useState<string>("adebayo.ridwan@ym.com");
   const [password, setPassword] = useState<string>("1234567890");
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
