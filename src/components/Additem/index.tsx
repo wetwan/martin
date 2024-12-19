@@ -1,8 +1,4 @@
-// import { useState } from "react";
-// import { db } from "../firebase/firebase"; // Firestore only
-// import { collection, addDoc } from "firebase/firestore";
-// import { toast } from "react-toastify";
-// import axios from "axios";
+
 
 import { useContext } from "react";
 import { ShopContext } from "../context/ShopContext";
