@@ -15,7 +15,7 @@ const Card = ({ image, type, id, shape }: Props) => {
         navigate(`/product/${id}`);
         scrollTo(0, 0);
       }}
-      className="w-[300px] block mx-auto h-[355px] shadow hover:shadow-lg hover:p-3 p-1 border-black"
+      className="max-w-[300px] w-full block mx-auto h-[355px] shadow hover:shadow-lg hover:p-3 p-1 border-black"
     >
       <img src={image[0]} alt={id} className="mb-1 w-full h-[88%]" />
       <div className="flex capitalize px-4 items-center justify-between border-black  mx-auto w- h-[10%]">
