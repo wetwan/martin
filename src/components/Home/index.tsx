@@ -12,17 +12,17 @@ const Hero = () => {
   const naviagte = useNavigate();
   return (
     <section id="home" className="">
-      <div className="w-full h-dvh absolute top-0 -z-50">
+      <div className="w-full h-dvh mx-auto absolute top-0 -z-50">
         <Fade arrows={false} duration={4000} canSwipe={true}>
         <div className=" bg-center  bg-slide-1 bg-no-repeat bg-cover w-full h-dvh md:py-52 py-28 px-10 md:pl-48">
-          <div className="px-6 py-5 border-black w-[300px]  md:w-[450px]  shadow-lg rounded-sm bg-white text-black">
+          <div className="px-6 py-5 border-black w-[300px]   md:w-[450px]  shadow-lg rounded-sm bg-white text-black">
             <span className=" font-bold text-2xl uppercase  text-gray-600">
               the best design
             </span>
-            <h2 className="mt-5 font-extrabold text-[48px] uppercase">
+            <h2 className="mt-5 font-extrabold sm:text-[48px] text-[30px] uppercase">
               the work of art
             </h2>
-            <p className=" text-primary-100 text-lg leading-loose w-5/6 my-5 font-bold">
+            <p className=" text-primary-100 sm:text-lg text-sm leading-7 sm:leading-loose w-5/6 my-5 font-bold">
               {" "}
               Beyond manicures and pedicures, we are artists who translate our
               vision onto clients' fingertips, enabling them to express their
@@ -41,14 +41,14 @@ const Hero = () => {
           </div>
         </div>
         <div className=" bg-center  bg-slide-2 bg-no-repeat bg-cover w-full h-dvh md:py-52 py-28 px-10 md:pl-48">
-          <div className="px-6 py-5 border-black w-[300px]  md:w-[450px]  shadow-lg rounded-sm bg-white text-black">
+          <div className="px-6 py-5 border-black w-[300px]   md:w-[450px]  shadow-lg rounded-sm bg-white text-black">
             <span className=" font-bold text-2xl uppercase  text-gray-600">
               the language of beauty
             </span>
-            <h2 className="mt-5 font-extrabold text-[48px] uppercase">
+            <h2 className="mt-5 font-extrabold sm:text-[48px] text-[30px] uppercase">
               the work of passion
             </h2>
-            <p className=" text-primary-100 text-lg leading-loose w-5/6 my-5 font-bold">
+            <p className=" text-primary-100 sm:text-lg text-sm leading-7 sm:leading-loose w-5/6 my-5 font-bold">
               Each stroke, hue blend, and the joy of turning a client's vision
               into wearable art makes nails a canvas for creativity. With every
               brushstroke, we connect through beauty and uniqueness.
@@ -65,14 +65,14 @@ const Hero = () => {
           </div>
         </div>
         <div className=" bg-center  bg-slide-3 bg-no-repeat bg-cover w-full h-dvh md:py-52 py-28 px-10 md:pl-48">
-          <div className="px-6 py-5 border-black w-[300px]  md:w-[450px]  shadow-lg rounded-sm bg-white text-black">
+          <div className="px-6 py-5 border-black w-[300px]   md:w-[450px]  shadow-lg rounded-sm bg-white text-black">
             <span className=" font-bold text-2xl uppercase  text-gray-600">
               the land of beauty
             </span>
-            <h2 className="mt-5 font-extrabold text-[48px] uppercase">
+            <h2 className="mt-5 font-extrabold sm:text-[48px] text-[30px] uppercase">
               the gate way to beauty
             </h2>
-            <p className=" text-primary-100 text-lg leading-loose w-5/6 my-5 font-bold">
+            <p className=" text-primary-100 sm:text-lg text-sm leading-7 sm:leading-loose w-5/6 my-5 font-bold">
               Salons are sanctuaries where self-care and artistry unite,
               transforming nails, moods, and confidence. Beauty is redefined
               through elegant designs that leave clients feeling polished,

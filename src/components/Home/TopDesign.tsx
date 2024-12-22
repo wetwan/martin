@@ -21,7 +21,7 @@ const TopDesign = () => {
           here are the top selling designs from our salon
         </p>
       </div>
-      <div className="grid rounded-sm gap-5 items-center justify-between md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid rounded-sm gap-5 items-center justify-between md:grid-cols-2 lg:grid-cols-3 mx-auto">
         {topDesign.map((item, i) => (
           <Card
             key={i}

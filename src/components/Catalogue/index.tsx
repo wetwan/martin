@@ -101,7 +101,7 @@ const Catalogue = () => {
           </div>
 
           {/* Product Grid */}
-          <div className="grid mt-10 rounded-sm gap-5 items-center justify-between md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid mt-10 rounded-sm gap-5 items-center justify-between md:grid-cols-2 lg:grid-cols-3 mx-auto">
             {currentProduct.map((item, i) => (
               <Card
                 key={i}

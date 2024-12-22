@@ -17,7 +17,7 @@ const ProdcutPage = () => {
     const foundProduct = products.find((item) => item.id === id);
     if (foundProduct) {
       setProductData(foundProduct);
-      setImage(foundProduct.images[0]);
+      // setImage(foundProduct.images[0]);
     }
   }, [id, products]);
 
@@ -50,14 +50,14 @@ const ProdcutPage = () => {
       </div>
 
       {/* Product Display */}
-      <div className="lg:w-5/6 w-full lg:h-[70vh] min-h-dvh h-dvh mb-20 mx-auto flex flex-col lg:flex-row items-start justify-between px-10 py-2  mt-10">
-        <div className="flex items-center flex-col lg:flex-row justify-between gap-6 p-5 lg:w-1/2 w-full h-[90%]">
+      <div className="lg:w-5/6 w-full lg:h-[70vh] min-h-dvh h-dvh mb-20 mx-auto flex flex-col lg:flex-row items-start justify-between sm:px-10 p-2 py-2  mt-10">
+        <div className="flex mx-auto items-center  flex-col lg:flex-row justify-between gap-6 sm:p-5 lg:w-1/2 w-full h-[90%]">
           {/* Image Thumbnails */}
-          <div className="flex lg:w-[25%] w-full flex-wrap lg:flex-nowrap  lg:h-[95%] h-[40%] lg:flex-col items-center gap-2">
+          <div className="flex mx-auto lg:w-[25%] w-full  lg:h-[95%] h-[40%] lg:flex-col items-center gap-2">
             {productData.images.map((pic, i) => (
               <div
                 key={i}
-                className="lg:h-1/4 h-[48%] lg:w-full w-[48%] mx-auto overflow-hidden"
+                className="lg:h-1/4 h-full lg:w-full w-[48%] mx-auto overflow-hidden"
               >
                 <img
                   onClick={() => setImage(pic)}
@@ -70,8 +70,14 @@ const ProdcutPage = () => {
           </div>
 
           {/* Main Image */}
-          <div className="lg:h-[97%] h-[59%] w-full">
-            <img src={image} alt={productData.name} className="w-full h-full" />
+          <div className="lg:h-[97%] p-2 h-[59%] w-full mb-4">
+            <div className="h-[90%]">
+              <img
+                src={image || productData.images[0]}
+                alt={productData.name}
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
 
@@ -90,35 +96,40 @@ const ProdcutPage = () => {
               <span className=" text-primary-300">{productData.shapes}</span>
             </h4>
             <div className=" flex items-center my-5">
-              <h4 className=" text-gray-400 capitalize text-[15px]"> color :</h4>
+              <h4 className=" text-gray-400 capitalize text-[15px]">
+                {" "}
+                color :
+              </h4>
               <div className=" flex items-center flex-wrap gap-3 px-4 ">
                 {productData.colors.map((color) => (
-                  <span className="capitalize rounded-sm shadow  bg-primary-300 text-white px-4 py-2" key={color}> {color}</span>
+                  <span
+                    className="capitalize rounded-sm shadow  bg-primary-300 text-white px-4 py-2"
+                    key={color}
+                  >
+                    {" "}
+                    {color}
+                  </span>
                 ))}
               </div>
             </div>
             <div className=" mt-5  px-3 py-3">
-                <a
-              href="https://www.instagram.com/amat_beauty_world_"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-7 bg-secondary-100 py-3 mt-3 text-white capitalize"
-            >
-              {" "}
-              contact me
-            </a>
+              <a
+                href="https://www.instagram.com/amat_beauty_world_"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-7 bg-secondary-100 py-3 mt-3 text-white capitalize"
+              >
+                {" "}
+                contact me
+              </a>
             </div>
-          
           </div>
         </div>
       </div>
       <TopDesign />
-     
     </section>
   ) : (
-    <>
-
-    </>
+    <></>
   );
 };
 
